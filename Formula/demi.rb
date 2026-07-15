@@ -5,21 +5,21 @@
 class Demi < Formula
   desc "Project maintenance tool for developers"
   homepage "https://github.com/wroog-com/demiurge"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/wroog-com/demiurge/releases/download/v0.5.0/demiurge_0.5.0_darwin_amd64.zip"
-    sha256 "d17febe9b3e80e9ef0b31e7e7f77d0dc5b8b4afb274a86db937324ebf7cdc1fe"
+    url "https://github.com/wroog-com/demiurge/releases/download/v0.6.0/demiurge_0.6.0_darwin_amd64.zip"
+    sha256 "0f9acc0a258160b15bd3550017b667176d3f1a8ac3d4067cb76aaabd13f141bf"
 
     define_method(:install) do
       bin.install "demi"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/wroog-com/demiurge/releases/download/v0.5.0/demiurge_0.5.0_darwin_arm64.zip"
-    sha256 "f532dbbabe1851ac321327dcbae7f1ea3b42063e9f3a7d7ae737e7aecbc66050"
+    url "https://github.com/wroog-com/demiurge/releases/download/v0.6.0/demiurge_0.6.0_darwin_arm64.zip"
+    sha256 "10b3c03da83980244a163b639b3537c485475cc8b0e7fa86027d5ffb54556fe2"
 
     define_method(:install) do
       bin.install "demi"
